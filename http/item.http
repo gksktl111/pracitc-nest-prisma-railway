@@ -1,0 +1,36 @@
+### 기본 URL 설정
+@baseUrl = http://localhost:3000
+
+### ========================================
+### Items API 테스트
+### ========================================
+
+### 1. 전체 아이템 조회 (Find All)
+GET {{baseUrl}}/items
+
+### 2. 단일 아이템 조회 (Find One)
+@itemId = YOUR_ITEM_ID_HERE
+GET {{baseUrl}}/items/{{itemId}}
+
+### 3. 아이템 생성 (Create)
+# ownerId는 실제 생성된 사용자 ID로 변경하세요
+POST {{baseUrl}}/items
+Content-Type: application/json
+
+{
+  "title": "첫 번째 아이템",
+  "content": "아이템 내용입니다.",
+  "ownerId": "cmjwue9ql0000gdg0wbdycjpl"
+}
+
+### 4. 아이템 수정 (Update)
+PATCH {{baseUrl}}/items/{{itemId}}
+Content-Type: application/json
+
+{
+  "title": "수정된 아이템 제목",
+  "content": "수정된 내용입니다."
+}
+
+### 5. 아이템 삭제 (Delete)
+DELETE {{baseUrl}}/items/{{itemId}}
