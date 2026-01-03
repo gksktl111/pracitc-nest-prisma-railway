@@ -1,4 +1,4 @@
-name: CI - Test on PR to dev
+name: CI - Test on PR to main
 
 on:
   pull_request:
