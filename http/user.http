@@ -1,5 +1,5 @@
-### 기본 URL 설정
-@baseUrl = http://localhost:3000
+### 기본 URL 설정,
+@baseUrl = pracitc-nest-prisma-railway-production.up.railway.app
 
 ### ========================================
 ### Users API 테스트
